@@ -217,11 +217,11 @@ Detached ruleset gains access by being unlocked (imported) inside a scope:
 
 .importer-2() {
   @variable: value; // unlocked detached ruleset CAN see this variable
-  #space > .importer1(); // unlock/import detached ruleset
+  #space > .importer-1(); // unlock/import detached ruleset
 }
 
 .use-place {
-  .importer2(); // unlock/import detached ruleset second time
+  .importer-2(); // unlock/import detached ruleset second time
    @detached();
 }
 ````
